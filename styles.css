@@ -68,14 +68,29 @@ header {
     border-radius: 5px;
 }
 .history-icon {
-    padding-right: 35px;
+    padding: 3px;
+    margin-right: 35px;
 }
-.icon-help {
-    padding-left: 470px;
-    padding-right: 20px;
+.help-icon {
+    padding: 3px;
+    margin-left: 470px;
+    margin-right: 20px;
 }
 
 .search-btn__content .search-btn__name {
     font-size: 13px;
     color: #C2B6C3;
+}
+.search-btn:hover {
+    border-color: #fff;
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.history-icon:hover, .help-icon:hover {
+    cursor: pointer;
+    background-color: #431E44;
+    border-color: #431E44;
+    border-radius: 5px;
+    filter: brightness(120%);
 }
