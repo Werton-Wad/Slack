@@ -168,3 +168,28 @@ header {
     cursor: pointer;
     filter:brightness(220%);
 }
+
+.column-left__channels {
+    color: #BCABBC;
+    font-size: 14px;
+}
+.column-left__channels__content > div:hover:not(:first-child) {
+    cursor: pointer;
+    background-color: #350D36;
+}
+.column-left__channels__content div:not(:first-child) {
+    padding: 7px 0;
+    padding-left: 15px;
+}
+.channels-text {
+    padding-top: 20px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.plus-btn {
+    margin-right: 25px;
+}
+.channels-btn {
+    padding-right: 5px;
+}
