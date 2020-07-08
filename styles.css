@@ -145,3 +145,26 @@ header {
     cursor: pointer;
     background-color: #350D36;
 }
+.column-left__options {
+    color: #BCABBC;
+    font-size: 14px;
+}
+.column-left__options__content {
+    border-bottom: 1px solid #532753;
+    padding: 10px 0;
+}
+.column-left__options__content div {
+    padding: 7px 0;
+    padding-left: 15px;
+}
+.column-left__options__content div img{
+    padding-right: 5px;
+}
+.column-left__options__content div:hover:not(:last-child) {
+    cursor: pointer;
+    background-color: #350D36;
+}
+.column-left__options__content div:hover:last-child {
+    cursor: pointer;
+    filter:brightness(220%);
+}
