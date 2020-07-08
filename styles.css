@@ -94,3 +94,54 @@ header {
     border-radius: 5px;
     filter: brightness(120%);
 }
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .column-left {
+    flex-basis: calc(100% / 6);
+    background-color: #3F0E40;
+}
+.main-content .column-right {
+    flex-basis: calc(100% - 100% / 6);
+}
+.column-left__wrapper {
+    padding: 0 15px;
+}
+.column-left__header {
+    border-top: 1px solid #532753;
+    border-bottom: 1px solid #532753;
+}
+.column-left__header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.column-left__header__content__text .name-company {
+    color: #fff;
+    font-weight: 900;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.column-left__header__content__text .name-man {
+    color: #D9CFD9;
+    font-size: 12px;
+}
+.new-message-icon {
+    position: relative;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.new-message-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.column-left__header:hover {
+    cursor: pointer;
+    background-color: #350D36;
+}
