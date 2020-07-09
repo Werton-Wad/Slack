@@ -101,6 +101,8 @@ header {
 .main-content .column-left {
     flex-basis: calc(100% / 6);
     background-color: #3F0E40;
+    color: #BCABBC;
+    font-size: 14px;
 }
 .main-content .column-right {
     flex-basis: calc(100% - 100% / 6);
@@ -127,6 +129,10 @@ header {
     color: #D9CFD9;
     font-size: 12px;
 }
+.column-left__header__content__text .name-man:hover {
+    color: #fff;
+    transition-delay: 0.05s;
+}
 .new-message-icon {
     position: relative;
     background-color: #fff;
@@ -144,10 +150,6 @@ header {
 .column-left__header:hover {
     cursor: pointer;
     background-color: #350D36;
-}
-.column-left__options {
-    color: #BCABBC;
-    font-size: 14px;
 }
 .column-left__options__content {
     border-bottom: 1px solid #532753;
@@ -168,28 +170,72 @@ header {
     cursor: pointer;
     filter:brightness(220%);
 }
-
-.column-left__channels {
-    color: #BCABBC;
-    font-size: 14px;
-}
 .column-left__channels__content > div:hover:not(:first-child) {
     cursor: pointer;
     background-color: #350D36;
 }
-.column-left__channels__content div:not(:first-child) {
+.column-left__channels__content > div:not(:first-child) {
     padding: 7px 0;
     padding-left: 15px;
 }
-.channels-text {
-    padding-top: 20px;
-    padding-left: 15px;
+.option-add {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 15px;
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: space-between;  
+}
+.plus-btn {
+    padding: 5px;
+    margin-right: 25px;
+}
+.small-triangle-down-btn {
+    padding-right: 5px;
 }
 .plus-btn {
     margin-right: 25px;
 }
-.channels-btn {
-    padding-right: 5px;
+.plus-btn:hover {
+    cursor: pointer;
+    background-color: #431E44;
+    border-color: #431E44;
+    border-radius: 5px;
+    filter: brightness(120%);
+}
+#active-channel {
+    background-color: #1164A3;
+    color: #fff;
+}
+#active-channel:hover {
+    background-color: #1164A3;
+    color: #fff;
+}
+.column-left__additional-options__content > div:not(:first-child) {
+    padding: 7px 0;
+    padding-left: 15px;
+}
+.column-left__additional-options__content > div:hover:not(:first-child):not(:last-child){
+    cursor: pointer;
+    background-color: #350D36;
+}
+.option-del {
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.option-del > div > span {
+    color: #907390;
+}
+.btn-del {
+    display: none;
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+.option-del:hover .btn-del {
+    display: block;
+}
+.btn-del:hover {
+    filter: brightness(220%);
 }
