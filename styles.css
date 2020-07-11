@@ -106,6 +106,7 @@ header {
 }
 .main-content .column-right {
     flex-basis: calc(100% - 100% / 6);
+    height: 100vh;
 }
 .column-left__wrapper {
     padding: 0 15px;
@@ -239,17 +240,15 @@ header {
 .btn-del:hover {
     filter: brightness(220%);
 }
-/* .column-right__content {
-    padding: 0 20px;
-} */
 .column-right__header {
     border-bottom: 1px solid #E2E2E2;
 }
 .column-right__header__content {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 2px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .column-right__wrapper {
     padding: 0 20px;
@@ -281,14 +280,180 @@ header {
 }
 .introductory-inf__description  > span:last-child{
     display: inline-block;
-    
+    padding: 5px;
 }
 .introductory-inf__description  > span:last-child:hover{
     cursor: default;
     border: 1px solid #E2E2E2;
-    padding: 5px;
     border-radius: 3px;
 }
-.count-people img:hover {
-    fill: yellow;
+.details {
+    padding: 5px;
+}
+.details img {
+    float: left;
+    padding-right: 10px;
+}
+.details span {
+    font-weight: 400;
+    font-size: 13px;
+    color: #606060;
+}
+.details:hover {
+    cursor: pointer;
+    background-color: #E2E2E2;
+    transition-delay: 0.05s;
+
+}
+.column-right__main-inf {
+    position: relative;
+    z-index: 1;
+    padding: 45px 0;
+    border-bottom: 1px solid #E2E2E2;
+}
+.column-right__main-inf h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+.column-right__main-inf__text {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+.column-right__main-inf__text span{
+    color: #1264A3;
+    border: 1px solid #E8F5FA;
+    border-radius: 5px;
+    background-color:#E8F5FA;
+}
+.column-right__main-inf__text b{
+    font-weight: 700;
+}
+.column-right__main-inf__text span:hover {
+   cursor: pointer;
+   background-color:#A7FDFF;
+}
+.add-people p {
+    display: inline-block;
+    font-size: 14px;
+    color: #1264A3;
+}
+.add-people:hover {
+    cursor: pointer;
+    filter:brightness(120%);
+}
+.day-bubble {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: -17%;
+    z-index: 10;
+    background-color: #fff;
+}
+.day-bubble p{
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #1D1C1D;
+    font-weight: 700;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+}
+
+.column-right__message__content {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.column-right__message__content:hover {
+    background-color: #F8F8F8;
+}
+.sender-img {
+    float: left;
+    padding-right: 5px;
+}
+.sender {
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+.message-time {
+    font-size: 13px;
+    color: #868586;
+    text-decoration: none;
+}
+.sender:hover, .message-time:hover {
+    text-decoration: underline;
+}
+.message-container {
+    margin-left: 50px;
+}
+.message-text {
+    text-align: left;
+    line-height: 25px;
+    color: #1D1C1D;
+    font-size: 14px;
+}
+.message-link {
+    color: #1264A3;
+    text-decoration: none;
+}
+.message-link:hover {
+    text-decoration: underline;
+}
+.editted-message {
+    color: #A0A0A0;
+    font-size: 13px;
+}
+.reactions div {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    background-color: #DDDDDD;
+    font-size: 12px;
+}
+.reactions div:hover {
+    cursor: pointer;
+    border-color: black;
+    background-color: #fff;
+}
+.replies {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+}
+.replies img{
+    padding-right: 10px;
+}
+.replies a{
+    font-size: 12px;
+}
+.replies:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    transition-delay: 0.05s;
+}
+.column-right__message {
+    position: relative;
+    border-bottom: 1px solid #E2E2E2;
+}
+.message1-bubble {
+    bottom: -10%;
+}
+.message2-bubble {
+    bottom: -35%;
+}
+
+.vertical-line {
+    float: left;
+    border-left: 4px solid #DDDDDD;
+    height: 320px;
+}
+.stream-inf p{
+    
 }
