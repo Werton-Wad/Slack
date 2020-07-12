@@ -47,6 +47,11 @@ body {
     font-weight: 400;
 }
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #350D36;
 }
 .search-bar__content {
@@ -94,19 +99,18 @@ header {
     border-radius: 5px;
     filter: brightness(120%);
 }
-.main-content {
-    display: flex;
-    justify-content: space-between;
-}
 .main-content .column-left {
-    flex-basis: calc(100% / 6);
+    position: fixed;
+    top: 38px;
+    left: 0;
+    width: calc(100% / 6); 
     background-color: #3F0E40;
     color: #BCABBC;
     font-size: 14px;
+    min-height: 100vh;
 }
 .main-content .column-right {
-    flex-basis: calc(100% - 100% / 6);
-    height: 100vh;
+    margin-left: calc(100% / 6); 
 }
 .column-left__wrapper {
     padding: 0 15px;
@@ -241,6 +245,11 @@ header {
     filter: brightness(220%);
 }
 .column-right__header {
+    position: fixed;
+    z-index: 1000;
+    top: 38px;
+    width: calc(100% - 100% / 6);
+    background-color: #fff;
     border-bottom: 1px solid #E2E2E2;
 }
 .column-right__header__content {
@@ -309,6 +318,7 @@ header {
     position: relative;
     z-index: 1;
     padding: 45px 0;
+    margin-top: 100px;
     border-bottom: 1px solid #E2E2E2;
 }
 .column-right__main-inf h1 {
@@ -363,6 +373,7 @@ header {
 .column-right__message__content {
     margin-top: 20px;
     margin-bottom: 30px;
+    padding: 10px 0;
 }
 .column-right__message__content:hover {
     background-color: #F8F8F8;
@@ -427,6 +438,7 @@ header {
 }
 .replies img{
     padding-right: 10px;
+    height: 23px;
 }
 .replies a{
     font-size: 12px;
@@ -440,20 +452,103 @@ header {
 }
 .column-right__message {
     position: relative;
+    z-index: 100;
     border-bottom: 1px solid #E2E2E2;
 }
 .message1-bubble {
     bottom: -10%;
 }
 .message2-bubble {
-    bottom: -35%;
+    bottom: -30%;
 }
 
 .vertical-line {
     float: left;
+    margin-right: 10px;
     border-left: 4px solid #DDDDDD;
     height: 320px;
 }
-.stream-inf p{
-    
+.youtube-title {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+.youtube-title:hover {
+    text-decoration: underline;
+}
+.channel-owner {
+    font-size: 15px;
+    color: #868586;
+    text-decoration: none;
+}
+.channel-owner:hover {
+    text-decoration: underline;
+}
+.name-video {
+    font-weight: 700;
+    color: #1264A3;
+    text-decoration: none;
+}
+.name-video:hover {
+    text-decoration: underline;
+}
+.stream-inf .common-inf{
+    padding-bottom: 5px;
+}
+.stream-inf img {
+    padding: 10px 0;
+    cursor: pointer;
+}
+.clearfix {
+    clear: left;
+}
+.dedicated-user {
+    font-weight: 600;
+    background-color: #FAE9B4;
+    border: 1px solid #FAE9B4;
+    border-radius: 5px;
+}
+ .message-container ul{
+    list-style-type: disc;
+}
+.message-container ul li{
+    margin-left: 23px;
+}
+.column-right__footer { 
+    position: fixed;
+    z-index: 1000;
+    bottom: 0%;
+    right: 0%;
+    width: calc(100% - 100% / 6);
+    border-top: 1px solid #E2E2E2;
+    background-color: #FFF;
+}
+.column-right__footer__content {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+.column-right__footer .energy-icon {
+    padding: 5px;
+    border-radius: 3%;
+}
+.column-right__footer .energy-icon:hover {
+    cursor: pointer;
+    background-color: #1264A3;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-delay: 0.05s;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #969696; 
+}
+.end-message {
+    border: none;
+    margin-bottom: 100px;
 }
