@@ -230,6 +230,9 @@ header {
     text-align: center;
     justify-content: space-between;
 }
+.option-del div {
+    line-height: 16px;
+}
 .option-del > div > span {
     color: #907390;
 }
